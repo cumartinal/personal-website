@@ -1,6 +1,5 @@
 <!-- TODO: FIx the problem with both navbar and backtopbutton changing window.onscroll -->
 
-<!DOCTYPE html>
 <html lang="en">
   <!-- Calling the JS scripts-->
   <script src="typewriter.js"></script>
