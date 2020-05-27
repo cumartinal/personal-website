@@ -7,33 +7,35 @@
     <!-- Works for  Chrome, firefox OS and Opera -->
     <meta name="theme-color" content="#99ff99">
 
-    <!-- Imports the fonts to use -->
     <style>
         @import url("https://use.typekit.net/urk6qtx.css");
+
+        .fourofour {
+          position: relative;
+          text-align: center;
+          border-width: 0px;
+          margin: 50px auto 40px auto;
+        }
+
     </style>
 	  
-
-    <!-- Add icon library from Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Take styling from style.css -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Load the favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
   </head>
 
-  <body>
+  <body style="background-color:var(--bodycolor);">
 
-    <div class="intro" id="INTRO">
-      <div class="introcontents">
-        <h1 id="typewritten" style="color:var(--secondaryaccent);
-          border-bottom: 7px solid var(--secondaryaccent);
-          border-left: 7px solid var(--secondaryaccent);
-          padding-left: 7px;">404: Page Not Found</h1> 
-
-      	<h1 style="padding-bottom:2.5%;">
-	      Uh oh, this page doesn't exist. You can go back to the index <a href="index.html">following this link</a>
-      	</h1>
-      </div>
+    <div class="fourofour">
+      <h1 style="color:var(--secondaryaccent); text-align:center;
+          margin-left: 0%;  margin-right: 0%;">
+        404: Page Not Found
+      </h1> 
+      <p style="text-align:center; margin-left: 0%;  margin-right: 0%;">
+        Uh oh, this page doesn't exist. You can go back to the homepage <a href="index.html">following this link</a>
+      </p>
     </div>
 
   </body>
