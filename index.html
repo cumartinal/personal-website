@@ -7,18 +7,19 @@
     <title>Martin Cuesta Allende's personal page</title>
     <!-- Makes the status bar change colour in mobile-->
     <!-- Works for  Chrome, firefox OS and Opera -->
-    <meta name="theme-color" content="#99ff99">
+    <meta name="theme-color" content="00843E">
 
     <!-- Imports the fonts to use -->
 	  <style>
   		@import url("https://use.typekit.net/urk6qtx.css");
 	  </style>
 	  
-
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Add icon library from Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Take styling from style.css -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleindex.css">
     <!-- Load the favicon.ico -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
@@ -28,18 +29,116 @@
     <!-- 
       Creates a top navigation bar
     -->
-    <ul id="navbar">
-      <li><a href="projects.html" id="navlink">PROJECTS</a></li>
-      <li><a href="#aboutmeintro" id="navlink2">ABOUT ME</a></li>
+    <ul id="navbar" style="z-index: 2;">
       <li><a href="connect.html" id="navlink3">CONNECT</a></li>
+      <li><a href="#aboutmeintro" id="navlink2">ABOUT ME</a></li>
+      <li><a href="projects.html" id="navlink">PROJECTS</a></li>
     </ul>
 
-
-    <div class="aboutme" id="aboutmeintro">
-      <div class="aboutmeintrocontents" id="aboutmeintrocontents">
-        <p>This website is still in development! Please check later</p>
-      </div>
+    <div class="aboutme" id="aboutmeintro" style="position: relative;">
+      <h1 style="border-bottom: 7px solid #D11594;
+                 border-left: 7px solid #D11594;
+                padding-left: 7px;">
+        Hi, I'm Martín!
+      </h1>
+      <p>
+        I'm a third year student at The University of Manchester in Computer Science (Human Computer Interaction),
+         where I take courses in computer science, psychology, biology, and social sciences. 
+         Some of my academic interests include accessibility, behaviour, and design.
+      </p>
+      <p>
+        Technology has become indispensable in our everyday lives, so I believe it should be easy and simple to use for everyone,
+         regardless of age, culture, ability or disability. This was one of the main reasons I chose to study HCI.
+      </p>
+      <p>
+        If you want to discover more about me, feel free to explore this page!
+      </p>
     </div>
 
+    <div class="academics" id="academics" style="position: relative;">
+      <h1 style="border-bottom: 7px solid #6B2C91;
+                 border-left: 7px solid #6B2C91;
+                padding-left: 7px;">
+        Academics
+      </h1>
+      <p>
+        This September will mark the start of my third year at The University of Manchester,
+        where I'm completing an integrated Masters degree in Computer Science with a special
+        focus on Human Computer Interaction (HCI). This interdisciplinary degree allows me
+        to develop my knowledge not only in computer science, but also psychology, biology, and social sciences.
+      </p>
+      <p>
+        There's no better example of this than the project I will undertake during my third year: <b>The Ethical and 
+        Societal Aspects of Neural Computing and Brain Simulation (SpiNNaker)</b>. I will explore how our future could 
+        change with the widespread adoption of low-level AI, and the ethical dilemmas and social implications it will 
+        create. I have also done other projects for university, some of which you can see in my 
+        <a href="projects.html" style="color: var(--darkgreen)">projects page</a>.
+      </p>
+      <p>
+        Of course, I also take and have taken other coursework- and lecture-based courses, like:
+      </p>
+      <p>
+        Software Engineering 2 <br>
+        Object Oriented Programming with Java II <br>
+        Distributed Systems <br>
+        Fundamentals of Databases <br>
+        Computer Graphics & Image Processing <br>
+      </p>
+      <p>
+        Perception and Action <br>
+        Cognitive Neuroscience <br>
+        Research Methods & Statistics <br>
+        Statistics and Data Analysis <br>
+        Essentials of Survey Design <br>
+        Motor Systems for HCI <br>
+      </p>
+      <p>
+        Before going to Manchester, I graduated high school in Lyon, France at the
+        <a href="https://www.csilyon.fr/en/" target="_blank" style="color: #0066FF">Cité Scolaire Internationale de Lyon</a>, where I obtained the highest honours in the International Option of the 
+        French Baccalaureate, American Section.
+      </p>
+    </div>
+
+    <div class="skills" id="skills" style="position: relative;">
+      <h1 style="border-bottom: 7px solid #0066FF;
+                 border-left: 7px solid #0066FF;
+                 padding-left: 7px;">
+        Skills
+      </h1>
+      <p>
+        <b>Tools</b>: Git, GitLab, Eclipse, Visual Studio Code, Adobe Creative Cloud (Adobe Xd, InDesign, Photoshop...)
+        <br><br>
+        <b>Programming</b>: Java, C++, HTML/CSS/JS, Bootstrap
+        <br><br>
+        <b>Languages</b>: Spanish (Native), English (Bilingual), French (Bilingual), Italian (Limited working proficiency), German (Limited working proficiency)
+        <br><br>
+        <b>General</b>: Web design and development, HCI, Research analysis
+      </p>
+    </div>
+
+    <div class="more" id="more" style="position: relative;">
+      <h1 style="border-bottom: 7px solid #55CDFC;
+                 border-left: 7px solid #55CDFC;
+                 padding-left: 7px;">
+        More
+      </h1>
+      <p>
+        I was born in Spain, moved to France when young, and then travelled again to the UK to study in 
+        university, so it's only natural that learning about different <b>cultures</b> is one of my favourite 
+        pastimes. I'm grateful of having been able to learn <b>5 languages</b>, and I continue to improve my 
+        level in all of them, but I'm not planning to stop at that number…
+      </p>
+      <p>
+        <b>Music</b> is definitely another one of my passions. I play the <b>electric guitar</b> and the <b>synth</b>, 
+        and I dabble a bit in composing my own songs. Haven't published anything yet, but someday a link 
+        to my material may appear here!
+      </p>
+    </div>
+
+
+  <!-- Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

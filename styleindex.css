@@ -15,62 +15,16 @@
   border-bottom: 4px solid var(--secondaryaccent);
 }
 
-.aboutmeintrocontents {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 100px;
-}
-
-.attributions {
-  height: 15vh;
-  position: static;
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--bodycolor);
-}
-
-.attributionscontents {
-  position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 0px;
-  color: grey;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 80%;
-}
-
 h1 {
   font-size: 7vmin;
   margin-top: 80px;
   margin-left: 5%;
   margin-right: 15%;
   text-align: left;
-  color: var(--accent);
+  color: black;
   font-family: p22-underground, sans-serif;
   font-weight: 900;
   font-style: normal;
-}
-
-h2 {
-  margin-left: 5%;
-  padding-left: 5px;
-  padding-top: 5px;
-  margin-right: calc(100% - 300px);
-  font-size: 200%;
-  color: var(--accent);
-  border-left: 5px solid var(--accent);
-  text-decoration: underlined;
-  border-bottom: 5px solid var(--accent);
-  font-family: p22-underground, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-h3 {
-  font-size: 80%;
-  margin-left: 5%;
-  padding-top: 20px;
-  color: var(--secondaryaccent);
 }
 
 p { /* Defining the general paragraph style */
@@ -97,6 +51,7 @@ body { /* Defining the general style of the website */
 /* Based on: https://www.w3schools.com/css/css_navbar.asp */
 
 ul { /* Creates a bullet list when at top of page*/
+  background-color: var(--bodycolor);
   list-style-type: none;
   font-size: 3vmin;
   margin: 0px;
@@ -104,20 +59,7 @@ ul { /* Creates a bullet list when at top of page*/
   width: 100%;               
   top: 0;                       /* Keep at 0, makes the navbar stay at the top */
   position: fixed;              /* Makes navbar not move when scrolling */
-}
-
-.navbarscroll { /* Changes navbar when it's scrolled */
-  list-style-type: none;
-  font-size: 3vmin;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;               
-  top: 0;                       /* Keep at 0, makes the navbar stay at the top */
-  position: fixed;              /* Makes navbar not move when scrolling */
-  outline: 4px solid var(--accent);
-  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-  background-color: var(--bodycolor);    /* Hides the text under when scrolling */
-  transition: background-color 0.2s ease-in-out; /* Transition between the colours */
+  outline: 8px solid var(--darkgreen);
 }
 
 li { /* Styling every single element */
@@ -156,6 +98,7 @@ li a:active { /* Styling when clicked */
 a { /* Inactive */
   text-decoration: none; /* Makes the links not underlined */
   color: #13A2BE;        /* Monokai-blue */
+  font-weight: bold;
 }
 
 a:hover { /* When hovering */
