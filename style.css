@@ -1,5 +1,5 @@
 :root{	/* Making a colour table for easy editing and colour adjustments */
-    --greenish: #99ff99; /* Websafe: #99ff99, actual one: #8af388 */
+    --darkgreen: #00843E;
     --washedgreenish: #ccffcc; /* Used for the attributions div */
     --accent: #336666; /* Websafe: #336666, actual one: #2d676f */
     --secondaryaccent: #663333; /* Websafe: #663333 */
@@ -7,15 +7,15 @@
     --bodycolor: #fbfffb;
 }
 
-.intro {
+.aboutmeintro {
   height: 100vh; /* Makes it occupy the whole screen at the start */
   position: relative;
-  background-color: var(--greenish);
+  background-color: var(--darkgreen);
   z-index: -1;
   border-bottom: 4px solid var(--secondaryaccent);
 }
 
-.introcontents {
+.aboutmeintrocontents {
   position: absolute;
   bottom: 0;
   margin-bottom: 100px;
@@ -104,8 +104,6 @@ ul { /* Creates a bullet list when at top of page*/
   width: 100%;               
   top: 0;                       /* Keep at 0, makes the navbar stay at the top */
   position: fixed;              /* Makes navbar not move when scrolling */
-  background-color: var(--greenish);    /* Hides the text under when scrolling */
-  transition: background-color 0.2s ease-in-out; /* Transition between the colours */
 }
 
 .navbarscroll { /* Changes navbar when it's scrolled */
@@ -133,8 +131,7 @@ li a { /* Styling inactive elements*/
   margin-top: 1vh;
   padding: 10px 15px;
   padding-bottom: 15px;
-  /* font-family: 'Montserrat', sans-serif; */
-  color: var(--accent);
+  color: black;
   font-family: p22-underground, sans-serif;
   font-weight: 500;
   font-style: normal;
