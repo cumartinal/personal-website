@@ -27,13 +27,29 @@
   <body>
 
     <!-- 
-      Creates a top navigation bar
+      Navbar
     -->
-    <ul id="navbar" style="z-index: 2;">
-      <li><a href="connect.html" id="navlink3">CONNECT</a></li>
-      <li><a href="#aboutmeintro" id="navlink2">ABOUT ME</a></li>
-      <li><a href="projects.html" id="navlink">PROJECTS</a></li>
-    </ul>
+    <nav class="navbar fixed-top navbar-expand-lg flex">
+      <a class="navbar-brand py-0" href="index.html">
+        <img src="FavIcon.png" width="65" height="65" alt="Personal website logo" loading="lazy">
+      </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-fill w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">ABOUT ME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="connect.html">CONNECT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="aboutme" id="aboutmeintro" style="position: relative;">
       <h1 style="border-bottom: 7px solid #D11594;
