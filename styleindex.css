@@ -7,19 +7,26 @@
     --bodycolor: #fefefe;
 }
 
-.aboutmeintro {
-  height: 100vh; /* Makes it occupy the whole screen at the start */
+
+a {
+  font-weight: bold;
+}
+
+body {
+  background-color: var(--bodycolor); 
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  font-size: 140%;
   position: relative;
-  background-color: var(--darkgreen);
-  z-index: -1;
-  border-bottom: 4px solid var(--secondaryaccent);
 }
 
 h1 {
-  font-size: 7vmin;
-  margin-top: 80px;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 5%;
-  margin-right: 15%;
   text-align: left;
   color: black;
   font-family: p22-underground, sans-serif;
@@ -27,8 +34,22 @@ h1 {
   font-style: normal;
 }
 
-p { /* Defining the general paragraph style */
-  margin-left: 10%;
+p {
+  margin-left: 5%;
+  color: black;
+  font-family: brandon-grotesque,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 120%;
+}
+
+.container-fluid {
+  display:block;
+}
+
+/* List of subjects */
+.list-group-item {
+  margin-left: 5%;
   margin-right: 10%;
   color: black;
   font-family: brandon-grotesque,sans-serif;
@@ -37,21 +58,11 @@ p { /* Defining the general paragraph style */
   font-size: 120%;
 }
 
-body { /* Defining the general style of the website */
-  background-color: var(--bodycolor); /* White */
-  margin-left: 0px;
-  padding-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  font-size: 140%;
-}
 
-
-/* Navbar styling */
-
+/* Top navbar styling */
 .navbar {
   background-color: var(--bodycolor);
-  border-bottom:5px solid var(--darkgreen);
+  border-bottom: 5px solid var(--darkgreen);
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -93,7 +104,70 @@ body { /* Defining the general style of the website */
 }
 
 
+/* Secondary navbar */
+.bd-toc {
+  position: sticky;
+  overflow-y: auto;
+  top: 6rem;
+  height: calc(100vh - 6rem);
+}
+
+.toc-entry a {
+  color: black;
+  font-family: p22-underground, sans-serif;
+  font-weight: normal;
+}
+
+
+.sidenav-link {
+  color: black;
+  font-family: p22-underground, sans-serif;
+  font-size: 1.7rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.sidenav-link.active {
+  font-weight: bolder;
+}
+
+.sidenav-link:hover {
+  text-decoration: none;
+}
+
+#intronav:hover {
+  color: #D11594;
+}
+
+#academicsnav:hover {
+  color: #6B2C91;
+}
+
+#skillsnav:hover {
+  color: #0066FF;
+}
+
+#morenav:hover {
+  color: #55CDFC;
+}
+
+.section-nav li {
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
 /* Smooth-scroll when clicking something */
 html {
   scroll-behavior: smooth;
+}
+
+/* Padding before a link so the div isn't hidden by top navbar */
+span:before {
+  height: 4.2rem;
+  content: "";
+  display:block;
 }
