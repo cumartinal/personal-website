@@ -87,6 +87,7 @@ p {
   font-size: 1.7rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
+  font-weight: normal;
 }
 
 .nav-link:hover {
