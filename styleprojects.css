@@ -1,110 +1,116 @@
 :root{	/* Making a colour table for easy editing and colour adjustments */
-    --darkgreen: #00843E;
-    --washedgreenish: #ccffcc; /* Used for the attributions div */
-    --accent: #336666; /* Websafe: #336666, actual one: #2d676f */
-    --secondaryaccent: #663333; /* Websafe: #663333 */
-    --clickaccent: #666633;
-    --bodycolor: #fefefe;
+  --darkgreen: #00843E;
+  --washedgreenish: #ccffcc; /* Used for the attributions div */
+  --accent: #336666; /* Websafe: #336666, actual one: #2d676f */
+  --secondaryaccent: #663333; /* Websafe: #663333 */
+  --clickaccent: #666633;
+  --bodycolor: #fefefe;
+}
+
+
+a {
+font-weight: bold;
+}
+
+body {
+background-color: var(--bodycolor); 
+margin-left: 0px;
+padding-left: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+font-size: 140%;
+position: relative;
 }
 
 h1 {
-  font-size: 7vmin;
-  margin-top: 80px;
-  margin-left: 5%;
-  margin-right: 15%;
-  text-align: left;
-  color: var(--accent);
-  font-family: p22-underground, sans-serif;
-  font-weight: 900;
-  font-style: normal;
+font-size: 3rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+margin-left: 5%;
+text-align: left;
+color: black;
+font-family: p22-underground, sans-serif;
+font-weight: 900;
+font-style: normal;
 }
 
-p { /* Defining the general paragraph style */
-  margin-left: 10%;
-  margin-right: 10%;
-  color: black;
-  font-family: brandon-grotesque,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 120%;
+p {
+margin-left: 5%;
+color: black;
+font-family: brandon-grotesque,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 120%;
 }
 
-body { /* Defining the general style of the website */
-  background-color: var(--bodycolor); /* White */
-  margin-left: 0px;
-  padding-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  font-size: 140%;
+.container-fluid {
+display:block;
 }
 
-/* Styling the top navigation bar */
-/* Based on: https://www.w3schools.com/css/css_navbar.asp */
-
-ul { /* Creates a bullet list when at top of page*/
-  background-color: var(--bodycolor);
-  list-style-type: none;
-  font-size: 3vmin;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;               
-  top: 0;                       /* Keep at 0, makes the navbar stay at the top */
-  position: fixed;              /* Makes navbar not move when scrolling */
-  outline: 8px solid var(--darkgreen);
-}
-
-li { /* Styling every single element */
-  text-align: center;
-  float: right; /* Elements start on the right, list is now horizontal */
-}
-
-li a { /* Styling inactive elements*/
-  display: block;     /* Lets click on the whole block and not only the text */
-  margin-right: 20px; /* Spaces at the right, without cutting the shadow */
-  margin-top: 1vh;
-  padding: 10px 15px;
-  padding-bottom: 15px;
-  color: black;
-  font-family: p22-underground, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-li a:hover { /* Styling when hovering over an element */
-  color: var(--secondaryaccent);
-  text-decoration: underline;  /* Keeps the text from being underlined when hovering */
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-li a:active { /* Styling when clicked */
-  color: var(--clickaccent);
-}
-
-.navlinkscroll {
-  color: var(--accent);
+/* List of subjects */
+.list-group-item {
+margin-left: 5%;
+margin-right: 10%;
+color: black;
+font-family: brandon-grotesque,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 120%;
 }
 
 
-/* Styling links */
-a { /* Inactive */
-  text-decoration: none; /* Makes the links not underlined */
-  color: #13A2BE;        /* Monokai-blue */
+/* Top navbar styling */
+.navbar {
+background-color: var(--bodycolor);
+border-bottom: 5px solid var(--darkgreen);
+padding-left: 0;
+padding-top: 0;
+padding-bottom: 0;
 }
 
-a:hover { /* When hovering */
-  text-decoration: underline;
+.navbar-brand {
+padding-top: 0;
+padding-bottom: 0;
 }
 
-a:active { /* When clicked */
-  color: var(--secondaryaccent);
+.navbar-brand image {
+padding: 0px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+color: black;
+font-family: p22-underground, sans-serif;
+font-size: 1.7rem;
+padding-top: 0rem;
+padding-bottom: 0rem;
+font-weight: normal;
+}
+
+@media (max-width: 992px){
+  .nav-link {
+      margin-bottom : 0.5rem;
+  }
+}
+
+.nav-link:hover {
+color: var(--darkgreen);
+text-decoration: underline;
+}
+
+.nav-link.active {
+color: var(--darkgreen);
+font-weight: bold;
 }
 
 .imagelink:hover { /* Makes the images non underlined when hovering */
-  text-decoration: none;
+text-decoration: none;
 }
-
 
 /* Smooth-scroll when clicking something */
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
