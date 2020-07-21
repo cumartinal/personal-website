@@ -1,0 +1,208 @@
+<!-- TODO: FIx the problem with both navbar and backtopbutton changing window.onscroll -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Martin Cuesta Allende</title>
+    <!-- Makes the status bar change colour in mobile-->
+    <!-- Works for  Chrome, firefox OS and Opera -->
+    <meta name="theme-color" content="00843E">
+
+    <!-- Imports the fonts to use -->
+	  <style>
+      @import url("https://use.typekit.net/urk6qtx.css");
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Lato&display=swap');
+	  </style>
+	  
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Add icon library from Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Take styling from style.css -->
+    <link rel="stylesheet" type="text/css" href="styledetailedprojects.css">
+    <!-- Load the favicon.ico -->
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+
+
+  <body data-spy="scroll" data-target="#secondarynav">
+    <header class="navbar fixed-top navbar-expand-lg flex">
+      <a class="navbar-brand py-0" href="index.html">
+        <img src="../FavIcon.png" width="65" height="65" alt="Personal website logo" loading="lazy">
+      </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-fill w-100">
+          <li class="nav-item active">
+            <a class="nav-link active" href="../projects.html">PROJECTS<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">ABOUT ME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../connect.html">CONNECT</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+
+        <!-- Side navbar -->
+        <nav id="secondarynav" class="navbar d-none d-xl-block col-xl-2 bd-toc order-2" style="padding-right:30px; border-bottom: none;" aria-label="Secondary navigation">
+          <ul class="section-nav flex-column justify-content-end">
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="denotenav" href="#intro">introduction</a>
+            </li>
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="denotenav" href="#concept">concept</a>
+            </li>
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="denotenav" href="#development">development</a>
+            </li>
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="denotenav" href="#ui">ui</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="col-12 col-md-11 col-xl-10 py-md-3 order-1" role="main">
+          <div class="intro" id="intro" style="position: relative; padding-top: 0rem;">
+            <span>
+              <h1 style="color: #6B2C91; font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 400%">
+                De<b>NOTE</b>
+              </h1>
+            </span>
+            <p style="margin-bottom: 0px;">
+              DeNOTE is a social note-sharing platform made for my First Year Team Project.
+            </p>
+          </div>
+
+
+          <div class="concept" id="concept" style="position: relative;">
+            <span>
+              <h1 style="border-bottom: 7px solid #6B2C91;
+                      border-left: 7px solid #6B2C91;
+                      padding-left: 7px;">
+              Concept
+              </h1>
+            </span>
+            <p>
+              DeNOTE was developed during my first year at
+              <a target="_blank" rel="noopener noreferrer" href="https://www.manchester.ac.uk/" style="color: #6B2C91">The University of Manchester</a>,
+              for COMP 10120, in which we had to develop a data-oriented web application.
+            </p>
+            <p>
+              As university students constantly sharing lecture notes through apps like Messenger or Whatsapp, we felt that
+              we could develop a more practical way to do this.
+            </p>
+            <p style="margin-bottom: 0px;">
+              It's true that similar websites exist, but these hide the majority of
+              documents behind a paywall. We also wanted to add a <b>social</b> aspect to our product
+              which other websites lack. If you know one of your friends creates great
+              study material, you could follow them on DeNOTE to have easy access to their notes.
+              If you had any questions about a document, you could simply ask them in the 
+              comments section. Need to access notes offline? Simply download them
+              for later use.
+            </p>
+
+          </div>
+
+          <div class="development" id="development" style="position: relative;">
+            <span>
+              <h1 style="border-bottom: 7px solid #6B2C91;
+                      border-left: 7px solid #6B2C91;
+                      padding-left: 7px;">
+                Development
+              </h1>
+            </span>
+            <p>
+              While everyone in the team worked in both the front- and back-end, we decided to
+              split the group into two. As I was a Human Computer Interaction student, I had
+              a lot of responsibilities in the front-end department, alongside some back-end
+              and non development tasks.
+            </p>
+            <p>
+              Let's first talk about the back-end. Built using 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.mysql.com" style="color: #00758f">mySQL</a>,
+              <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/SQL" style="color: #f29221">SQL</a>,
+              and <a target="_blank" rel="noopener noreferrer" href="https://www.php.net/" style="color: #8892bf">PHP</a>,
+              our database was used to store notes in PDF and image formats, as well as storing user profiles.
+              A lot of care was used when designing the tables we'd use, as we knew that every
+              design decision could have many consequences further in development.
+            </p>
+            <p>
+              To develop an accessible, intuitive, and modern front-end we used 
+              <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/" style="color: #7952b3">Bootstrap</a>
+              alongside custom
+              <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" style="color: #000000">JavaScript</a>.
+              After prototyping the flow and design of the website, development of our front-end
+              went smoothly. Building a mobile accessible website was essential, as we believed 
+              that's how most students would use it: in the bus before an exam. In the end, our
+              efforts paid off as we were voted the "application with the Most Appealing User Interface"
+              by the other students.
+            </p>
+            <p>
+              Of course, a project of this scope didn't only involve development tasks. I was also
+              in charge of legal considerations, such as Terms and Conditions, and planning how
+              to handle copyright claims and user reports. I was also often in charge of handling
+              complaints within the group about other team members and task distribution.
+            </p>
+            <p style="margin-bottom: 0px;">
+              The last part of development was used for polishing the product, in which I refined
+              the UI and fixed a potential SQL injection exploit.
+            </p>
+          </div>
+
+          <div class="ui" id="ui" style="position: relative; padding-bottom: 2rem;">
+            <span>
+              <h1 style="border-bottom: 7px solid #6B2C91;
+                    border-left: 7px solid #6B2C91;
+                    padding-left: 7px;">
+                UI
+              </h1>
+            </span>
+            <p>
+              One of my main motivations in pursuing a career in Human Computer Interaction was 
+              due to my interest in accessibility programs. Because of this, a lot of care was 
+              given to the UI and the UX.
+            </p>
+            <p>
+              We wanted DeNOTE to work on any device regardless of viewport size. It wasn't a 
+              mobile-first nor a desktop-first approach, but a mix of both. This is why we chose to use
+              <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/" style="color: #7952b3">Bootstrap</a>
+              , which made developing a responsive website easy and fast.
+            </p>
+            <p>
+              To make our website sleek and modern we looked at how other websites had solved
+              the same issues we had, but applying our own twist to it. For example, the visual
+              card organisation in the subjects page was inspired by how image thumbnails are 
+              presented in an Instagram profile.
+            </p>
+            <p>
+              After developing mockups, we started to design our own branding. As this was a tool 
+              meant for students in our university, the colour branding is heavily based in the purple
+              of <a target="_blank" rel="noopener noreferrer" href="https://www.manchester.ac.uk/" style="color: #6B2C91">The University of Manchester</a>.
+              The fonts <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/specimen/Montserrat" style="color: #000000; font-family: 'Montserrat', sans-serif;">Montserrat</a>
+              and <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/specimen/Lato" style="color: #000000; font-family: 'Lato', sans-serif;">Lato</a>
+              were chosen because of how they paired together and their easy legibility at all sizes.
+            </p>
+            <p>
+              Finally, the name DeNOTE is a stylized mesh of "The Note", inspired by the verb
+              "to denote", to stand for, to make known. From there, the tagline "sharing DeNOTEs
+              you need" was an easy play on words to come up with.
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+  
+  <!-- Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
