@@ -146,6 +146,14 @@ p {
   color: #6B2C91;
 }
 
+#eventlitenav:hover {
+  color: #020659;
+}
+
+#perswebnav:hover {
+  color: var(--darkgreen);
+}
+
 .section-nav li {
   text-align: right;
 }
