@@ -37,7 +37,7 @@ h1 {
 p {
   margin-left: 5%;
   color: black;
-  font-family: brandon-grotesque,sans-serif;
+  font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 120%;
@@ -47,15 +47,8 @@ p {
   display:block;
 }
 
-/* List of subjects */
-.list-group-item {
-  margin-left: 5%;
-  margin-right: 10%;
-  color: black;
-  font-family: brandon-grotesque,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 120%;
+.figure-caption {
+  font-family: brandon-grotesque, sans-serif;
 }
 
 
