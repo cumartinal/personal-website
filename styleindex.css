@@ -18,7 +18,7 @@ body {
   padding-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  font-size: 140%;
+  font-size: 1.3em;
   position: relative;
 }
 
@@ -34,6 +34,13 @@ h1 {
   font-style: normal;
 }
 
+@media (max-width: 992px){
+  h1 {
+      margin-left : 2%;
+      font-size: 2.8rem;
+  }
+}
+
 p {
   margin-left: 5%;
   color: black;
@@ -41,6 +48,12 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 120%;
+}
+
+@media (max-width: 992px){
+  p {
+      margin-left : 2%;
+  }
 }
 
 .container-fluid {
@@ -78,7 +91,7 @@ p {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2.1' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .nav-link {
@@ -174,7 +187,11 @@ html {
 
 /* Padding before a link so the div isn't hidden by top navbar */
 span:before {
-  height: 4.2rem;
+  height: 4rem;
   content: "";
   display:block;
+}
+
+span.navbar-toggler-icon:before {
+  content: none;
 }
