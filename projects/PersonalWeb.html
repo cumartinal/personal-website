@@ -14,7 +14,6 @@
     <!-- Imports the fonts to use -->
 	  <style>
       @import url("https://use.typekit.net/urk6qtx.css");
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Lato&display=swap');
 	  </style>
 	  
     <!-- Bootstrap -->
@@ -59,7 +58,16 @@
         <nav id="secondarynav" class="navbar d-none d-xl-block col-xl-2 bd-toc order-2" style="padding-right:30px; border-bottom: none;" aria-label="Secondary navigation">
           <ul class="section-nav flex-column justify-content-end">
             <li class="toc-entry toc-h2">
-              <a class="sidenav-link" id="denotenav" href="#intro">introduction</a>
+              <a class="sidenav-link" id="perswebnav" href="#intro">introduction</a>
+            </li>
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="perswebnav" href="#olddesign">old design</a>
+            </li>
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="perswebnav" href="#planning">planning</a>
+            </li>
+            <li class="toc-entry toc-h2">
+              <a class="sidenav-link" id="perswebnav" href="#development">development</a>
             </li>
           </ul>
         </nav>
@@ -67,13 +75,102 @@
         <main class="col-12 col-md-11 col-xl-10 py-md-3 order-1" role="main">
           <div class="intro" id="intro" style="position: relative; padding-top: 0rem;">
             <span>
-              <h1 style="color: #00843E; font-weight: 300; font-size: 400%">
-                (This) Website
+              <h1 style="color:#005f0f; font-weight: bold; font-size: 300%">
+                This.
               </h1>
             </span>
+          </div>
+
+
+          <div class="olddesign" id="olddesign" style="position: relative;">
+            <span>
+              <h1 style="border-bottom: 7px solid #005f0f;
+                      border-left: 7px solid #005f0f;
+                      padding-left: 7px;">
+              Old design
+              </h1>
+            </span>
+            <p>
+              I originally started building this website during my second year of university,
+              as I realised that an online portfolio could showcase my skills better than a 
+              simple CV.
+            </p>
             <p style="margin-bottom: 0px;">
-              More info about this is coming soon. In the meantime, why not check my 
-              <a href="../projects.html" style="color: #00843E">other projects</a>?
+              However, the original design, hastily done in less than an afternoon, was quite bad
+              to say the least. The weird tone of green strained the eyes, it wasn't mobile 
+              friendly, and lacked a general vision. Overall, it was in clear need of a redesign. 
+              As I was occupied with school work, I had to leave this for the summer.
+            </p>
+          </div>
+
+          <div class="planning" id="planning" style="position: relative; padding-bottom: 2rem;">
+            <span>
+              <h1 style="border-bottom: 7px solid #005f0f;
+                    border-left: 7px solid #005f0f;
+                    padding-left: 7px;">
+                Planning
+              </h1>
+            </span>
+            <p>
+              Before coding the website, I started by designing the <b>branding</b>. I selected
+              easy to read sans-serif fonts that complemented each other well:
+              <a target="_blank" rel="noopener noreferrer" href="https://p22.com/family-Underground" style="font-family: p22-underground, sans-serif; color:black;">P22 Underground</a> 
+              for the titles, and 
+              <a target="_blank" rel="noopener noreferrer" href="https://issuu.com/hvdfonts/docs/brandon" style="color:black;">Brandon Grotesque</a> 
+              for the paragraphs. Concerning colours, I utilized tones that had a strong personal 
+              significance: this website is supposed to represent me, after all. The main green 
+              colour has a double meaning: it's both the colour of my eyes and the one of the 
+              mountains that cover the region my family originates from.
+            </p>
+            <p>
+              After I had a branding I was happy with, it was time to start prototyping. I used
+              <a target="_blank" rel="noopener noreferrer" href="https://www.adobe.com/products/xd.html" style="color: #470137">Adobe XD</a> 
+              to make interactive mockups, as I already had experience using it for another of my projects,
+              <a target="_blank" rel="noopener noreferrer" href="EventLite.html" style="color: #020659">EventLite</a>. 
+              By making both desktop and mobile artboard, I had a clear idea of what to develop 
+              and how my website should look like on all viewports.
+            </p>
+            <p style="margin-bottom: 0px;">
+              There are plenty of small details meant to give the website a bit more personality. 
+              The accent colour in the project pages changes to that of the project itself, links 
+              to third party products take the colour of said product's branding (or an accessible 
+              close-match).
+            </p>
+          </div>
+
+
+          <div class="development" id="development" style="position: relative; padding-bottom: 2rem;">
+            <span>
+              <h1 style="border-bottom: 7px solid #005f0f;
+                    border-left: 7px solid #005f0f;
+                    padding-left: 7px;">
+                Development
+              </h1>
+            </span>
+            <p>
+              I used 
+              <a target="_blank" rel="noopener noreferrer" href="https://code.visualstudio.com/" style="color: #0066B8">Visual Studio Code</a> 
+              as my editor, as I also wanted to use tools I was not familiar with during this 
+              project. Thanks to <a href="https://github.com/cumartinal" target="_blank" style="color: black;">GitHub's</a> 
+              issue and project features, it was easy to plan out the next steps to take in 
+              development.
+            </p>
+            <p>
+              This website is hosted using 
+              <a href="https://pages.github.com/" target="_blank" style="color: black;">GitHub Pages</a>, 
+              which poses a small problem: it must be a static site. This means that I can't use 
+              PHP code for some of the planned features, like the contact form. However, I can't 
+              justify the cost of hosting the website elsewhere for a small number of visits. 
+              Creating my own hosting server has its own complications too, as the website 
+              would be down everytime I travel to university or back home. I'm currently 
+              researching 3rd party alternatives that can be used in a static site.
+            </p>
+            <p style="margin-bottom: 0px;">
+              To ensure that the website is accessible, I used the 
+              <a href="https://wave.webaim.org/report#/cumartinal.com" target="_blank" style="color: #4877b5;">WAVE</a> 
+              tool, fixing contrast errors and alerts. I also used 
+              <a href="https://developers.google.com/speed/pagespeed/insights/?url=cumartinal.com" target="_blank" style="color: #1a46c6;">Lighthouse</a> 
+              to check that there weren't any issues with performance. 
             </p>
           </div>
         </main>
