@@ -1,0 +1,27 @@
+.socialContainer {
+  /* width: 80%; Needed for center if we already have text-align?*/
+  text-align: center;
+  margin: 0 auto;
+}
+
+a.socialLink {
+  margin: 0 1.3rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.socialLink:hover {
+  /* TODO: Think of what to do */
+}
+
+a.github {
+  color: #171515;
+}
+
+a.linkedin {
+  color: #007ab6;
+}
+
+a.email {
+  color: #171515;
+}
