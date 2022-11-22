@@ -1,29 +1,37 @@
 // Step 1: Import React
 import * as React from "react";
 import { Link } from "gatsby";
-import HeroNavbar from "../components/heroNavbar";
+import Layout from "../components/layout";
 import SocialMediaBanner from "../components/socialMediaBanner";
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
-    <div>
-      <HeroNavbar pageTitle="Home Page">
-        <h1>Hi, I'm Martín!</h1>
-        <Link to="/about">About</Link>
-        <p>
-          I'm currently rebuilding this website. In the meantime, why not take a
-          look at my CV? You can also add me on LinkedIn or email me at
-          cumartinal@gmail.com.
-        </p>
-      </HeroNavbar>
+    <Layout>
+      <h1>Hi, I'm Martín!</h1>
+      <h2>
+        I'm a 4th Year MEng Computer Science (Human Computer Interaction)
+        student at The University of Manchester, UK
+      </h2>
+      <p>
+        <Link to="/about">About me</Link>
+        <Link to="/education">Education</Link>
+        <Link to="/experience">Work Experience</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/cv">CV</Link>
+      </p>
+      <p>
+        I'm currently rebuilding this website. In the meantime, why not take a
+        look at my CV? You can also add me on LinkedIn or email me at
+        cumartinal@gmail.com.
+      </p>
       <SocialMediaBanner />
-    </div>
+    </Layout>
   );
 };
 
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Home Page</title>;
+export const Head = () => (
+  <title>Martín Cuesta Allende's personal website</title>
+);
 
-// Step 3: Export your component
 export default IndexPage;

@@ -10,6 +10,10 @@ a.socialLink {
   display: inline-block;
 }
 
+a.socialLink:focus {
+  margin: -1px 1.25rem;
+}
+
 a.socialLink:hover {
   /* TODO: Think of what to do */
 }
