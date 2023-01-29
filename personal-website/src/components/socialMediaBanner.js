@@ -17,6 +17,7 @@ const SocialMediaBanner = () => {
       <a
         href="https://www.linkedin.com/in/cumartinal/"
         target="_blank"
+        rel="noreferrer"
         className={[socialLink, linkedin].join(" ")}
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
@@ -24,6 +25,7 @@ const SocialMediaBanner = () => {
       <a
         href="https://github.com/cumartinal"
         target="_blank"
+        rel="noreferrer"
         className={[socialLink, github].join(" ")}
       >
         <FontAwesomeIcon icon={faGithub} size="2x" />

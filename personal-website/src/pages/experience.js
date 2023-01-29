@@ -7,11 +7,26 @@ const ExperiencePage = () => {
   return (
     <main>
       <h1>Work Experience</h1>
-      <Link to="/">Back to Home</Link>
+      <h2>Front-End Developer Intern @ Zebra Technologies (2021-2022)</h2>
       <p>
-        I’m a 4th Year MEng student at the University of Manchester doing a
-        Computer Science (Human Computer Interaction) degree. My academic and
+        I did a one-year internship at Zebra Technologies, in London, working as
+        a Front-end developer. I was tasked with developing the user interface
+        for several mobile products using the Flutter framework, including a UI
+        component library. This required collaborating not only with my
+        teammates, but also with other teams across the company, including the
+        UX team. You can check the projects I worked on here.
       </p>
+      <p>
+        During my time at Zebra I mainly focused on building accessibility. I
+        took responsibility for most accessibility-related tasks, including
+        ensuring full compatibility with native accessibility services, auditing
+        the applications to find any outstanding issues, and creating responsive
+        apps that worked on devices of all sizes. Towards the end of my
+        internship, I also gave a presentation teaching other company developers
+        the basics of accessibility and how to create accessible apps with
+        Flutter.
+      </p>
+      {/* TODO: Add app screenshot carousel and link to projects above*/}
     </main>
   );
 };
