@@ -1,28 +1,27 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { indexNav, IndexNavUl } from "./indexNav.module.css";
+import { indexNav, indexNavUl, indexNavLi } from "./indexNav.module.css";
 
 const IndexNav = () => {
   return (
     <div class={indexNav}>
-      <ul class={IndexNavUl}>
-        <li>
+      <ul class={indexNavUl}>
+        <li class={indexNavLi}>
           <Link to="/about">About me</Link>
         </li>
-        <li>
+        <li className={indexNavLi}>
           <Link to="/education">Education</Link>
         </li>
-        <li>
+        <li class={indexNavLi}>
           <Link to="/experience">Work Experience</Link>
         </li>
-        <li>
+        <li class={indexNavLi}>
           <Link to="/projects">Projects</Link>
         </li>
-        <li>
+        <li class={indexNavLi}>
           <Link to="/cv">CV</Link>
         </li>
       </ul>
-      <p></p>
     </div>
   );
 };

@@ -1,0 +1,55 @@
+div.indexDiv {
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: none;
+}
+
+@media screen and (min-width: 768px) {
+  div.indexDiv {
+    margin: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.IntroTextBox {
+  flex: 3;
+  max-width: 800px;
+  margin-right: 175px;
+}
+
+@media screen and (max-width: 768px) {
+  .IntroTextBox {
+    flex: 3;
+    max-width: 800px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .IntroTextBox {
+    flex: 3;
+    max-width: 800px;
+    margin-right: 10px;
+  }
+}
+
+.IndexNavBox {
+  flex: 2;
+  margin: auto;
+  max-width: 150px;
+  min-width: 150px;
+  padding-bottom: 15px;
+}
