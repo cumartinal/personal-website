@@ -1,0 +1,9 @@
+div.contentDiv {
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: none;
+}
+
+@media screen and (min-width: 768px) {
+}

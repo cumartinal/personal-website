@@ -1,12 +1,14 @@
 // Step 1: Import React
 import * as React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
+import ContentLayout from "../components/contentLayout";
+import NavBar from "../components/navBar";
 
 // Step 2: Define your component
 const EducationPage = () => {
   return (
-    <Layout>
+    <ContentLayout>
+      <NavBar />
       <main>
         <h1>Education</h1>
         <h2>
@@ -52,7 +54,7 @@ const EducationPage = () => {
           Literature, and American Geography and Geopolitics.
         </p>
       </main>
-    </Layout>
+    </ContentLayout>
   );
 };
 
