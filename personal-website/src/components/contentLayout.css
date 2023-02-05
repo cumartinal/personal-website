@@ -3,7 +3,27 @@ div.contentDiv {
   margin-left: 10px;
   margin-right: 10px;
   max-width: none;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
+  div.contentDiv {
+    padding-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: none;
+  }
+}
+
+main {
+  margin: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  max-width: none;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin: auto;
+  }
 }

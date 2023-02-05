@@ -12,4 +12,14 @@
 
 a {
   color: #000000;
+  text-underline-offset: 4px;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #128743;
+}
+a:focus {
+  margin: 0px;
+  border: 0px;
+  box-shadow: none;
 }

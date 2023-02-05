@@ -18,7 +18,8 @@ const ExperiencePage = () => {
           interface for several mobile products using the Flutter framework,
           including a UI component library. This required collaborating not only
           with my teammates, but also with other teams across the company,
-          including the UX team. You can check the projects I worked on here.
+          including the UX team. You can check the projects I worked on{" "}
+          <Link to="/projects">here</Link>.
         </p>
         <p>
           During my time at Zebra I mainly focused on building accessibility. I

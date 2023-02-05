@@ -97,8 +97,10 @@ const Menu = styled.div`
   a {
     text-decoration: none;
     font-size: 1.5em;
+    text-underline-offset: 4px;
     &:hover {
       text-decoration: underline;
+      text-decoration-color: #128743;
     }
     &:focus {
       margin: 0px;
@@ -106,7 +108,7 @@ const Menu = styled.div`
       box-shadow: none;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 640px) {
     padding: 10px 0;
     li {
       padding: 10px 0;
