@@ -11,6 +11,10 @@ h2 {
   font-size: 2em;
 }
 
+h4 {
+  font-family: "Noto Sans", sans-serif;
+}
+
 p {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.125em;

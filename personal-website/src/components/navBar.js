@@ -95,6 +95,7 @@ const Menu = styled.div`
     margin-left: 30px;
   }
   a {
+    color: #000000;
     text-decoration: none;
     font-size: 1.5em;
     text-underline-offset: 4px;

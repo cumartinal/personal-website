@@ -1,7 +1,9 @@
 // Step 1: Import React
 import * as React from "react";
 import ContentLayout from "../components/contentLayout";
+import FoodGallery from "../components/foodGallery";
 import NavBar from "../components/navBar";
+import SocialMediaBanner from "../components/socialMediaBanner";
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -50,6 +52,8 @@ const AboutPage = () => {
           planning Bolivia’s dish, but check out some of the things I’ve cooked
           below!
         </p>
+        <FoodGallery />
+        <SocialMediaBanner />
       </main>
     </ContentLayout>
   );

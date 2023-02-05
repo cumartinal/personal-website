@@ -9,10 +9,31 @@ div.contentDiv {
 @media screen and (min-width: 768px) {
   div.contentDiv {
     padding-top: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     max-width: none;
   }
+}
+
+a {
+  color: #6164ef;
+  text-decoration: none;
+  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  margin: -1px;
+  border: 1px solid #6164ef;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #6164ef;
 }
 
 main {
