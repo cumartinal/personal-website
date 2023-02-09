@@ -1,8 +1,8 @@
 // Step 1: Import React
 import * as React from "react";
-import { Link } from "gatsby";
 import ContentLayout from "../components/contentLayout";
 import NavBar from "../components/navBar";
+import SocialMediaBanner from "../components/socialMediaBanner";
 
 // Step 2: Define your component
 const EducationPage = () => {
@@ -53,6 +53,7 @@ const EducationPage = () => {
           , 30% of my mark consisted of Modern American History, English
           Literature, and American Geography and Geopolitics.
         </p>
+        <SocialMediaBanner />
       </main>
     </ContentLayout>
   );

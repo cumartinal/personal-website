@@ -1,9 +1,24 @@
 // Step 1: Import React
 import * as React from "react";
-import { Link } from "gatsby";
 import report from "../documents/3rdYearReport.pdf";
 import ContentLayout from "../components/contentLayout";
 import NavBar from "../components/navBar";
+import SocialMediaBanner from "../components/socialMediaBanner";
+import Carousel from "../components/carouselBase";
+
+// Import images
+import QNoteInbox from "../images/Zebra/QNoteInbox.png";
+import QChatReact from "../images/Zebra/QChatReact.png";
+import QChatFavourite from "../images/Zebra/QChatFavourite.png";
+import FlutterUILibrary from "../images/Zebra/FlutterUILibrary.png";
+import UILibraryCalendar from "../images/Zebra/UILibraryCalendar.png";
+import UILibraryRandomColour from "../images/Zebra/UILibraryRandomColour.png";
+import UILibraryStats from "../images/Zebra/UILibraryStats.png";
+import LabelScanScan from "../images/LabelScan/LabelScanScan.png";
+import LabelScanTable from "../images/LabelScan/LabelScanTable.png";
+import LabelScanGraph from "../images/LabelScan/LabelScanGraph.png";
+import LabelScanTableNight from "../images/LabelScan/LabelScanTableNight.png";
+import LabelScanGraphNight from "../images/LabelScan/LabelScanGraphNight.png";
 
 // Step 2: Define your component
 const ProjectsPage = () => {
@@ -20,7 +35,6 @@ const ProjectsPage = () => {
           entirely in Dart and Flutter. Collaborating with the UX team, we
           created a responsive, robust and modern front-end
         </p>
-        {/* TODO: Add screenshot carousel */}
         <p>
           Accessibility was a focus point in this project, making the
           applications fully ADA compliant. I took responsibility for most
@@ -29,6 +43,16 @@ const ProjectsPage = () => {
           any outstanding issues, and creating responsive apps that worked on
           devices of all sizes.
         </p>
+        <Carousel
+          naturalSlideWidth={1170}
+          naturalSlideHeight={2532}
+          imgs={[QNoteInbox, QChatFavourite, QChatReact]}
+          alts={[
+            "QNote inbox screenshot",
+            "QChat favourite contacts screenshot",
+            "QChat chat screen screenshot",
+          ]}
+        />
         <h2>Flutter UI Component Library @ Zebra Technologies</h2>
         <p>
           A parallel project to Q-Suite, this consisted of developing a
@@ -38,7 +62,22 @@ const ProjectsPage = () => {
           documentation, including best practices, and ensured the components
           were as accessible as possible.
         </p>
-        {/* TODO: Add screenshot carousel */}
+        <Carousel
+          naturalSlideWidth={1170}
+          naturalSlideHeight={2532}
+          imgs={[
+            UILibraryStats,
+            FlutterUILibrary,
+            UILibraryRandomColour,
+            UILibraryCalendar,
+          ]}
+          alts={[
+            "Flutter UI Library statistics card screenshot",
+            "Flutter UI Library buttons screenshot",
+            "Flutter UI Library random colour utility screenshot",
+            "Flutter UI Library calendar screenshot",
+          ]}
+        />
         <h2>LabelScan @ The University of Manchester</h2>
         <p>
           My Third Year Project at The University of Manchester was LabelScan,
@@ -54,7 +93,24 @@ const ProjectsPage = () => {
           LabelScan attempted to bridge this gap, making the information of
           nutrition labels accessible.
         </p>
-        {/* TODO: Add screenshot carousel*/}
+        <Carousel
+          naturalSlideWidth={1080}
+          naturalSlideHeight={2214}
+          imgs={[
+            LabelScanScan,
+            LabelScanTable,
+            LabelScanGraph,
+            LabelScanTableNight,
+            LabelScanGraphNight,
+          ]}
+          alts={[
+            "LabelScan screenshot, scanning a nutritional label",
+            "LabelScan screenshot, table presentation of nutrition info",
+            "LabelScan screenshot, graph presentation of nutrition info",
+            "LabelScan screenshot, table presentation of nutrition info, night mode",
+            "LabelScan screenshot, graph presentation of nutrition info, night mode",
+          ]}
+        />
         <p>
           Using Google’s ML Kit, the app scanned the nutrition label, extracted
           its text, parsed the information within and presented it back to the
@@ -78,6 +134,7 @@ const ProjectsPage = () => {
           </a>
           .
         </p>
+        <SocialMediaBanner />
       </main>
     </ContentLayout>
   );

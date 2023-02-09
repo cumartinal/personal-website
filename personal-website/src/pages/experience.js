@@ -3,6 +3,13 @@ import * as React from "react";
 import { Link } from "gatsby";
 import ContentLayout from "../components/contentLayout";
 import NavBar from "../components/navBar";
+import SocialMediaBanner from "../components/socialMediaBanner";
+import Carousel from "../components/carouselBase";
+
+// Import images
+import FlutterUILibrary from "../images/Zebra/FlutterUILibrary.png";
+import QNoteInbox from "../images/Zebra/QNoteInbox.png";
+import QChatReact from "../images/Zebra/QChatReact.png";
 
 // Step 2: Define your component
 const ExperiencePage = () => {
@@ -31,7 +38,17 @@ const ExperiencePage = () => {
           developers the basics of accessibility and how to create accessible
           apps with Flutter.
         </p>
-        {/* TODO: Add app screenshot carousel and link to projects above*/}
+        <Carousel
+          naturalSlideWidth={1170}
+          naturalSlideHeight={2532}
+          imgs={[QNoteInbox, FlutterUILibrary, QChatReact]}
+          alts={[
+            "QNote inbox screenshot",
+            "Flutter UI Component Library screenshot",
+            "QChat chat screen screenshot",
+          ]}
+        />
+        <SocialMediaBanner />
       </main>
     </ContentLayout>
   );
