@@ -35,6 +35,107 @@ const EducationPage = () => {
           that scans nutrition labels and presents them in a more accessible
           manner.
         </p>
+        <p>
+          <b>Current GPA</b>: 79% (First Class)
+        </p>
+        <table>
+          <tr>
+            <td>
+              <b>Year 4</b>
+            </td>
+            <td>
+              Industrial Project Report
+              <br />
+              Modelling Data on the Web
+              <br />
+              Querying Data on the Web
+              <br />
+              Data Engineering
+              <br />
+              Principles of Digital Biology
+              <br />
+              Introduction to Health Informatics
+              <br />
+              Decision Behaviour
+              <br />
+              Business Feasibility Study
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Year 3</b>
+            </td>
+            <td>
+              Third Year Project
+              <br />
+              User Experience
+              <br />
+              Cognitive Robotics
+              <br />
+              Anthropology of Vision, Senses, Memory
+              <br />
+              Advanced Social Network Analysis
+              <br />
+              Enterprise Management for CS
+              <br />
+              Managing Finance in Enterprise
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Year 2</b>
+            </td>
+            <td>
+              Software Engineering I, II
+              <br />
+              Fundamentals of Databases
+              <br />
+              Computer Graphics
+              <br />
+              Distributed Computing
+              <br />
+              Statistics and Data Analysis
+              <br />
+              Essentials of Survey Design
+              <br />
+              Motor Systems for HCI
+              <br />
+              Sensory Systems for HCI
+              <br />
+              Perception and Action
+              <br />
+              Cognitive Neuroscience
+              <br />
+              Cognition
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Year 1</b>
+            </td>
+            <td>
+              First Year Team Project
+              <br />
+              Fundamentals of Computer Architecture
+              <br />
+              Object Oriented Programming with Java I, II
+              <br />
+              Fundamentals of Distributed Systems
+              <br />
+              Research Methods & Statistics
+              <br />
+              Introduction to Cognition
+              <br />
+              Brain & Behaviour
+              <br />
+              Sensation & Perception
+              <br />
+              Perception and Action
+              <br />
+              Excitable Cells
+            </td>
+          </tr>
+        </table>
         {/* TODO: Add courses table */}
         <h2>
           International Option of the French Baccalaureate @ Cité Scolaire

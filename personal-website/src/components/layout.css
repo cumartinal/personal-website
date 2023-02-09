@@ -45,3 +45,19 @@ a:focus {
   outline: 0;
   box-shadow: inset 0 0 0 1px #6164ef;
 }
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+td {
+  vertical-align: bottom;
+  line-height: 24px;
+  padding-right: 4px;
+}
