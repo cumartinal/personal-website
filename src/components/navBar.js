@@ -28,7 +28,7 @@ const LargeMenu = styled.div`
 `;
 
 const MenuIcon = ({ onClick, icon }) => (
-  <div role="button" onClick={onClick}>
+  <div role="button" onClick={onClick} onKeyDown={onClick}>
     {icon}
   </div>
 );
@@ -61,9 +61,17 @@ class ResponsiveMenu extends Component {
         </LargeMenu>
         <SmallMenu className={smallMenuClassName} size={changeMenuOn}>
           {!this.state.showMenu ? (
-            <MenuIcon onClick={this.handleClick} icon={menuOpenButton} />
+            <MenuIcon
+              onClick={this.handleClick}
+              onKeyDown={this.handleClick}
+              icon={menuOpenButton}
+            />
           ) : (
-            <MenuIcon onClick={this.handleClick} icon={menuCloseButton} />
+            <MenuIcon
+              onClick={this.handleClick}
+              onKeyDown={this.handleClick}
+              icon={menuCloseButton}
+            />
           )}
           {this.state.showMenu ? <div>{menu}</div> : null}
         </SmallMenu>

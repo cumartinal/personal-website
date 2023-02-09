@@ -42,63 +42,99 @@ function FoodGallery() {
           data-src={NYCishCheesecake}
           data-sub-html="<h4>NYC-ish cheesecake</h4><p>An NYC-style inspired cheesecake with a Digestive biscuit base</p>"
         >
-          <img className="img-responsive" src={NYCishCheesecake} />
+          <img
+            className="img-responsive"
+            src={NYCishCheesecake}
+            alt="NYC Cheesecake"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={MughlaiParatha}
           data-sub-html="<h4>Mughlai Paratha (<span lang='bn'>মোগলাই পরোটা</span>)</h4><p>Spicy flatbread popular in Bengal, filled with eggs, onion, chiles, coriander and turmeric</p>"
         >
-          <img className="img-responsive" src={MughlaiParatha} />
+          <img
+            className="img-responsive"
+            src={MughlaiParatha}
+            alt="Mughlai Paratha, cut in half"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={ThreePies}
           data-sub-html="<h4>Christmas reunion cakes</h4><p>Clockwise: Red wine pear cake, ganache and nuts cake, and goat cheese and fig cake</p>"
         >
-          <img className="img-responsive" src={ThreePies} />
+          <img
+            className="img-responsive"
+            src={ThreePies}
+            alt="Red wine pear cake, ganache and nuts cake, and goat cheese and fig cake"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={Aush}
           data-sub-html="<h4>Aush (<span lang='fa' dir='rtl'>آش</span>)</h4><p>Tomato-based soup with noodles from Afghanistan. Topped with a yogurt sauce</p>"
         >
-          <img className="img-responsive" src={Aush} />
+          <img
+            className="img-responsive"
+            src={Aush}
+            alt="Bowl filled with Aush"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={Empanadas}
           data-sub-html="<h4>Empanadas</h4><p>Argentinian empanadas, filled with meat and olives. They go very well with chimichurri</p>"
         >
-          <img className="img-responsive" src={Empanadas} />
+          <img
+            className="img-responsive"
+            src={Empanadas}
+            alt="Empanadas served in a bowl"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={RedWinePannaCotta}
           data-sub-html="<h4>Red wine panna cotta</h4><p>Topped with berries!</p>"
         >
-          <img className="img-responsive" src={RedWinePannaCotta} />
+          <img
+            className="img-responsive"
+            src={RedWinePannaCotta}
+            alt="Red wine panna cotta, topped with red berries"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={Schnitzel}
           data-sub-html="<h4>Schnitzel</h4><p>Austrian breaded veal cutlet</p>"
         >
-          <img className="img-responsive" src={Schnitzel} />
+          <img
+            className="img-responsive"
+            src={Schnitzel}
+            alt="Schnitzel, served with a salad and butter potatoes"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={Shorgoghal}
           data-sub-html="<h4>Shorgoghal (<span lang='az'>Şorqoğal</span>)</h4><p>Spice-filled buns from Azerbaijan. Typically baked for Persian New Year, they represent the sun.</p>"
         >
-          <img className="img-responsive" src={Shorgoghal} />
+          <img
+            className="img-responsive"
+            src={Shorgoghal}
+            alt="A tray with 9 shorgoghal"
+          />
         </a>
         <a
           className={galleryItem}
           data-src={Waterzooi}
           data-sub-html="<h4>Waterzooi</h4><p>Cream and chicken stew, originating from the Ghent, in the Flanders region of Belgium</p>"
         >
-          <img className="img-responsive" src={Waterzooi} />
+          <img
+            className="img-responsive"
+            src={Waterzooi}
+            alt="Closeup of waterzooi bowl"
+          />
         </a>
       </LightGallery>
     </div>
