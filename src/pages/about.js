@@ -1,9 +1,13 @@
 // Step 1: Import React
 import * as React from "react";
+import loadable from "@loadable/component";
 import ContentLayout from "../components/contentLayout";
-import FoodGallery from "../components/foodGallery";
 import NavBar from "../components/navBar";
 import SocialMediaBanner from "../components/socialMediaBanner";
+
+const FoodGallery = loadable(() => import("../components/foodGallery"), {
+  ssr: false,
+});
 
 export const Head = () => <title>About Me | Martín Cuesta Allende</title>;
 
