@@ -9,6 +9,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import CV from "../documents/CV_Martin_Cuesta_Allende.pdf";
 
 const SmallMenu = styled.div`
   display: none;
@@ -143,7 +144,9 @@ const NavBar = () => {
               <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/cv">CV</Link>
+              <a href={CV} target="_blank" rel="noreferrer">
+                CV
+              </a>
             </li>
           </nav>
         </Menu>

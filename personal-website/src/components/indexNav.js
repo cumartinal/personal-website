@@ -6,6 +6,7 @@ import {
   indexNavLi,
   indexNavA,
 } from "./indexNav.module.css";
+import CV from "../documents/CV_Martin_Cuesta_Allende.pdf";
 
 const IndexNav = () => {
   return (
@@ -32,9 +33,9 @@ const IndexNav = () => {
           </Link>
         </li>
         <li class={indexNavLi}>
-          <Link to="/cv" class={indexNavA}>
+          <a class={indexNavA} href={CV} target="_blank" rel="noreferrer">
             CV
-          </Link>
+          </a>
         </li>
       </ul>
     </div>
