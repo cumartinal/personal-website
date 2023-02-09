@@ -11,8 +11,11 @@ import FlutterUILibrary from "../images/Zebra/FlutterUILibrary.png";
 import QNoteInbox from "../images/Zebra/QNoteInbox.png";
 import QChatReact from "../images/Zebra/QChatReact.png";
 
-// Step 2: Define your component
-const ExperiencePage = () => {
+export const Head = () => (
+  <title>Work Experience | Martín Cuesta Allende</title>
+);
+
+export default function ExperiencePage() {
   return (
     <ContentLayout>
       <NavBar />
@@ -52,11 +55,4 @@ const ExperiencePage = () => {
       </main>
     </ContentLayout>
   );
-};
-
-export const Head = () => (
-  <title>Work Experience | Martín Cuesta Allende</title>
-);
-
-// Step 3: Export your component
-export default ExperiencePage;
+}

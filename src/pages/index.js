@@ -1,12 +1,14 @@
-// Step 1: Import React
 import * as React from "react";
 import Layout from "../components/layout";
 import IndexLayout from "../components/indexLayout";
 import SocialMediaBanner from "../components/socialMediaBanner";
 import IndexNav from "../components/indexNav";
 
-// Step 2: Define your component
-const IndexPage = () => {
+export const Head = () => (
+  <title>Martín Cuesta Allende's personal website</title>
+);
+
+export default function IndexPage() {
   return (
     <Layout>
       <IndexLayout>
@@ -28,10 +30,4 @@ const IndexPage = () => {
       </IndexLayout>
     </Layout>
   );
-};
-
-export const Head = () => (
-  <title>Martín Cuesta Allende's personal website</title>
-);
-
-export default IndexPage;
+}

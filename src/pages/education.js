@@ -1,11 +1,11 @@
-// Step 1: Import React
 import * as React from "react";
 import ContentLayout from "../components/contentLayout";
 import NavBar from "../components/navBar";
 import SocialMediaBanner from "../components/socialMediaBanner";
 
-// Step 2: Define your component
-const EducationPage = () => {
+export const Head = () => <title>Education | Martín Cuesta Allende</title>;
+
+export default function EducationPage() {
   return (
     <ContentLayout>
       <NavBar />
@@ -158,9 +158,4 @@ const EducationPage = () => {
       </main>
     </ContentLayout>
   );
-};
-
-export const Head = () => <title>Education | Martín Cuesta Allende</title>;
-
-// Step 3: Export your component
-export default EducationPage;
+}

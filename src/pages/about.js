@@ -5,8 +5,10 @@ import FoodGallery from "../components/foodGallery";
 import NavBar from "../components/navBar";
 import SocialMediaBanner from "../components/socialMediaBanner";
 
+export const Head = () => <title>About Me | Martín Cuesta Allende</title>;
+
 // Step 2: Define your component
-const AboutPage = () => {
+export default function AboutPage() {
   return (
     <ContentLayout>
       <NavBar />
@@ -57,9 +59,4 @@ const AboutPage = () => {
       </main>
     </ContentLayout>
   );
-};
-
-export const Head = () => <title>About Me | Martín Cuesta Allende</title>;
-
-// Step 3: Export your component
-export default AboutPage;
+}

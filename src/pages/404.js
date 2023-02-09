@@ -15,18 +15,16 @@ const paragraphStyles = {
   marginBottom: 48,
 };
 
-const NotFoundPage = () => {
+export const Head = () => <title>Not found</title>;
+
+export default function NotFoundPage() {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>404: Page not found</h1>
       <p style={paragraphStyles}>
         Uh oh, this page doesn't exist.
-        <Link to="/">Go back to the homepage</Link>.
+        <Link to="/"> Go back to the homepage</Link>.
       </p>
     </main>
   );
-};
-
-export default NotFoundPage;
-
-export const Head = () => <title>Not found</title>;
+}

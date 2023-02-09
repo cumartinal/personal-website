@@ -1,4 +1,3 @@
-// Step 1: Import React
 import * as React from "react";
 import report from "../documents/3rdYearReport.pdf";
 import ContentLayout from "../components/contentLayout";
@@ -20,8 +19,9 @@ import LabelScanGraph from "../images/LabelScan/LabelScanGraph.png";
 import LabelScanTableNight from "../images/LabelScan/LabelScanTableNight.png";
 import LabelScanGraphNight from "../images/LabelScan/LabelScanGraphNight.png";
 
-// Step 2: Define your component
-const ProjectsPage = () => {
+export const Head = () => <title>Projects | Martín Cuesta Allende</title>;
+
+export default function ProjectsPage() {
   return (
     <ContentLayout>
       <NavBar />
@@ -138,9 +138,4 @@ const ProjectsPage = () => {
       </main>
     </ContentLayout>
   );
-};
-
-export const Head = () => <title>Projects | Martín Cuesta Allende</title>;
-
-// Step 3: Export your component
-export default ProjectsPage;
+}
