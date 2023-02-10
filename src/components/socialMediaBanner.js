@@ -18,6 +18,7 @@ const SocialMediaBanner = () => {
         href="https://www.linkedin.com/in/cumartinal/"
         target="_blank"
         rel="noreferrer"
+        aria-label="LinkedIn"
         className={[socialLink, linkedin].join(" ")}
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
@@ -26,6 +27,7 @@ const SocialMediaBanner = () => {
         href="https://github.com/cumartinal"
         target="_blank"
         rel="noreferrer"
+        aria-label="Github"
         className={[socialLink, github].join(" ")}
       >
         <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -40,6 +42,7 @@ const EmailLink = () => {
     return (
       <a
         href="mailto:cumartinal@gmail.com"
+        aria-label="Email"
         className={[socialLink, email].join(" ")}
       >
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
@@ -52,6 +55,7 @@ const EmailLink = () => {
   return (
     <a
       href="mailto:cumartinal@gmail.com"
+      aria-label="Email"
       className={[socialLink, email].join(" ")}
     >
       <FontAwesomeIcon icon={faEnvelope} size="2x" />
