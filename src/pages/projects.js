@@ -28,89 +28,108 @@ export default function ProjectsPage() {
       <main>
         <h1>Projects</h1>
         <h2>Q-Suite @ Zebra Technologies</h2>
-        <p>
-          Q-Suite is a set of mobile applications for the enterprise,
-          facilitating communication between employees and other work-related
-          tasks. I was part of the team developing the user interface, written
-          entirely in Dart and Flutter. Collaborating with the UX team, we
-          created a responsive, robust and modern front-end
-        </p>
-        <p>
-          Accessibility was a focus point in this project, making the
-          applications fully ADA compliant. I took responsibility for most
-          accessibility-related tasks, including ensuring full compatibility
-          with native accessibility services, auditing the applications to find
-          any outstanding issues, and creating responsive apps that worked on
-          devices of all sizes.
-        </p>
-        <Carousel
-          naturalSlideWidth={1170}
-          naturalSlideHeight={2532}
-          imgs={[QNoteInbox, QChatFavourite, QChatReact]}
-          alts={[
-            "QNote inbox screenshot",
-            "QChat favourite contacts screenshot",
-            "QChat chat screen screenshot",
-          ]}
-        />
+        <div class="flexBox">
+          <div class="textFlexBox">
+            <p>
+              Q-Suite is a set of mobile applications for the enterprise,
+              facilitating communication between employees and other
+              work-related tasks. I was part of the team developing the user
+              interface, written entirely in Dart and Flutter. Collaborating
+              with the UX team, we created a responsive, robust and modern
+              front-end
+            </p>
+            <p>
+              Accessibility was a focus point in this project, making the
+              applications fully ADA compliant. I took responsibility for most
+              accessibility-related tasks, including ensuring full compatibility
+              with native accessibility services, auditing the applications to
+              find any outstanding issues, and creating responsive apps that
+              worked on devices of all sizes.
+            </p>
+          </div>
+          <div class="carouselFlexBox">
+            <Carousel
+              naturalSlideWidth={1170}
+              naturalSlideHeight={2532}
+              imgs={[QNoteInbox, QChatFavourite, QChatReact]}
+              alts={[
+                "QNote inbox screenshot",
+                "QChat favourite contacts screenshot",
+                "QChat chat screen screenshot",
+              ]}
+            />
+          </div>
+        </div>
         <h2>Flutter UI Component Library @ Zebra Technologies</h2>
-        <p>
-          A parallel project to Q-Suite, this consisted of developing a
-          mobile-first user component library in Flutter, meant to increase
-          consistency across apps and reduce development time. Aside from
-          developing the components themselves, I also wrote most of the
-          documentation, including best practices, and ensured the components
-          were as accessible as possible.
-        </p>
-        <Carousel
-          naturalSlideWidth={1170}
-          naturalSlideHeight={2532}
-          imgs={[
-            UILibraryStats,
-            FlutterUILibrary,
-            UILibraryRandomColour,
-            UILibraryCalendar,
-          ]}
-          alts={[
-            "Flutter UI Library statistics card screenshot",
-            "Flutter UI Library buttons screenshot",
-            "Flutter UI Library random colour utility screenshot",
-            "Flutter UI Library calendar screenshot",
-          ]}
-        />
+        <div class="flexBox">
+          <div class="textFlexBox">
+            <p>
+              A parallel project to Q-Suite, this consisted of developing a
+              mobile-first user component library in Flutter, meant to increase
+              consistency across apps and reduce development time. Aside from
+              developing the components themselves, I also wrote most of the
+              documentation, including best practices, and ensured the
+              components were as accessible as possible.
+            </p>
+          </div>
+          <div class="carouselFlexBox">
+            <Carousel
+              naturalSlideWidth={1170}
+              naturalSlideHeight={2532}
+              imgs={[
+                UILibraryStats,
+                FlutterUILibrary,
+                UILibraryRandomColour,
+                UILibraryCalendar,
+              ]}
+              alts={[
+                "Flutter UI Library statistics card screenshot",
+                "Flutter UI Library buttons screenshot",
+                "Flutter UI Library random colour utility screenshot",
+                "Flutter UI Library calendar screenshot",
+              ]}
+            />
+          </div>
+        </div>
         <h2>LabelScan @ The University of Manchester</h2>
-        <p>
-          My Third Year Project at The University of Manchester was LabelScan,
-          an Android app meant to make nutrition labels accessible to people
-          with dyslexia and visual impairments.
-        </p>
-        <p>
-          Nutrition labels contain very important information about the foods we
-          consume, especially for people with dietary restrictions, but their
-          design leaves behind those with dyslexia and visual impairments. No
-          nutrition label standard aims to make information accessible to them,
-          and none leverage digital technology to enhance their accessibility.
-          LabelScan attempted to bridge this gap, making the information of
-          nutrition labels accessible.
-        </p>
-        <Carousel
-          naturalSlideWidth={1080}
-          naturalSlideHeight={2214}
-          imgs={[
-            LabelScanScan,
-            LabelScanTable,
-            LabelScanGraph,
-            LabelScanTableNight,
-            LabelScanGraphNight,
-          ]}
-          alts={[
-            "LabelScan screenshot, scanning a nutritional label",
-            "LabelScan screenshot, table presentation of nutrition info",
-            "LabelScan screenshot, graph presentation of nutrition info",
-            "LabelScan screenshot, table presentation of nutrition info, night mode",
-            "LabelScan screenshot, graph presentation of nutrition info, night mode",
-          ]}
-        />
+        <div class="flexBox">
+          <div class="textFlexBox">
+            <p>
+              My Third Year Project at The University of Manchester was
+              LabelScan, an Android app meant to make nutrition labels
+              accessible to people with dyslexia and visual impairments.
+            </p>
+            <p>
+              Nutrition labels contain very important information about the
+              foods we consume, especially for people with dietary restrictions,
+              but their design leaves behind those with dyslexia and visual
+              impairments. No nutrition label standard aims to make information
+              accessible to them, and none leverage digital technology to
+              enhance their accessibility. LabelScan attempted to bridge this
+              gap, making the information of nutrition labels accessible.
+            </p>
+          </div>
+          <div class="carouselFlexBox">
+            <Carousel
+              naturalSlideWidth={1080}
+              naturalSlideHeight={2214}
+              imgs={[
+                LabelScanScan,
+                LabelScanTable,
+                LabelScanGraph,
+                LabelScanTableNight,
+                LabelScanGraphNight,
+              ]}
+              alts={[
+                "LabelScan screenshot, scanning a nutritional label",
+                "LabelScan screenshot, table presentation of nutrition info",
+                "LabelScan screenshot, graph presentation of nutrition info",
+                "LabelScan screenshot, table presentation of nutrition info, night mode",
+                "LabelScan screenshot, graph presentation of nutrition info, night mode",
+              ]}
+            />
+          </div>
+        </div>
         <p>
           Using Google’s ML Kit, the app scanned the nutrition label, extracted
           its text, parsed the information within and presented it back to the
