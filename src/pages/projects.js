@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import report from "../documents/3rdYearReport.pdf";
 import ContentLayout from "../components/contentLayout";
 import NavBar from "../components/navBar";
@@ -27,6 +28,36 @@ export default function ProjectsPage() {
       <NavBar />
       <main>
         <h1>Projects</h1>
+        <h2>Resource Planning Analysis and Improvement @ CPI</h2>
+        <p>
+          As part of my{" "}
+          <Link to="/education">Faculty data science fellowship</Link>, I worked
+          with host company{" "}
+          <a href="https://www.uk-cpi.com/" target="_blank" rel="noreferrer">
+            CPI
+          </a>{" "}
+          to improve their manual processes and introduce data science methods
+          in their business operations.
+        </p>
+        <p>
+          CPI works with a variety of clients, conducting technical development
+          work to help them bring their products to market. As part of their
+          work, they need to frequently estimate how long projects will take in
+          order to allocate resources and inform staffing decisions.
+        </p>
+        <p>
+          However, CPI did not have a way of checking whether their predictions
+          were accurate. I performed <b>data engineering</b>, combining data
+          sources in order to assess the accuracy of their forecasting methods
+          through <b>time series analysis</b>. I also created an automated tool
+          that will help CPI check their prediction accuracy on a weekly basis.
+        </p>
+        <p>
+          Thanks to this project, CPI has been able to increase the accuracy of
+          their predictions, and we estimate that, in the long run, it will save
+          more than <b>162 staff hours</b> per month by shortening the length of
+          planning meetings.
+        </p>
         <h2>Q-Suite @ Zebra Technologies</h2>
         <div class="flexBox">
           <div class="textFlexBox">
@@ -34,12 +65,12 @@ export default function ProjectsPage() {
               Q-Suite is a set of mobile applications for the enterprise,
               facilitating communication between employees and other
               work-related tasks. I was part of the team developing the user
-              interface, written entirely in Dart and Flutter. Collaborating
-              with the UX team, we created a responsive, robust and modern
-              front-end
+              interface, written entirely in <b>Dart</b> and <b>Flutter</b>.
+              Collaborating with the UX team, we created a responsive, robust
+              and modern front-end
             </p>
             <p>
-              Accessibility was a focus point in this project, making the
+              <b>Accessibility</b> was a focus point in this project, making the
               applications fully ADA compliant. I took responsibility for most
               accessibility-related tasks, including ensuring full compatibility
               with native accessibility services, auditing the applications to
@@ -65,10 +96,10 @@ export default function ProjectsPage() {
           <div class="textFlexBox">
             <p>
               A parallel project to Q-Suite, this consisted of developing a
-              mobile-first user component library in Flutter, meant to increase
-              consistency across apps and reduce development time. Aside from
-              developing the components themselves, I also wrote most of the
-              documentation, including best practices, and ensured the
+              mobile-first user component library in <b>Flutter</b>, meant to
+              increase consistency across apps and reduce development time.
+              Aside from developing the components themselves, I also wrote most
+              of the documentation, including best practices, and ensured the
               components were as accessible as possible.
             </p>
           </div>
@@ -96,7 +127,7 @@ export default function ProjectsPage() {
           <div class="textFlexBox">
             <p>
               My Third Year Project at The University of Manchester was
-              LabelScan, an Android app meant to make nutrition labels
+              LabelScan, an <b>Android</b> app meant to make nutrition labels
               accessible to people with dyslexia and visual impairments.
             </p>
             <p>

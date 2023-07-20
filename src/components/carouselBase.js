@@ -21,9 +21,10 @@ export default function Carousel({
   imgs,
   alts,
   visibleSlides = 1,
+  maxWidth = "325px",
 }) {
   return (
-    <div style={{ maxWidth: "325px", margin: "auto", position: "relative" }}>
+    <div style={{ maxWidth: maxWidth, margin: "auto", position: "relative" }}>
       <CarouselProvider
         naturalSlideWidth={naturalSlideWidth}
         naturalSlideHeight={naturalSlideHeight}

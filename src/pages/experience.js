@@ -21,6 +21,29 @@ export default function ExperiencePage() {
       <NavBar />
       <main>
         <h1>Work Experience</h1>
+        <h2>Data Scientist @ CPI (Jun - Jul 2023)</h2>
+        <p>
+          As part of my{" "}
+          <Link to="/education">Faculty data science fellowship</Link>, I worked
+          with host company{" "}
+          <a href="https://www.uk-cpi.com/" target="_blank" rel="noreferrer">
+            CPI
+          </a>{" "}
+          to improve their manual processes and introduce data science methods
+          in their business operations.
+        </p>
+        <p>
+          I performed data engineering, combining data from multiple sources and
+          assessed the accuracy of their manual resource planning and
+          forecasting methods through time series analysis. I also created a
+          tool for automated analysis and outlined recommendations to improve
+          the current system and better integrate data science methods. Further
+          details on the project is available <Link to="/projects">here</Link>.
+        </p>
+        <p>
+          This project culminated with a presentation in front of more than 100
+          guests.
+        </p>
         <h2>Front-End Developer Intern @ Zebra Technologies (2021-2022)</h2>
         <div class="flexBox">
           <div class="textFlexBox">
