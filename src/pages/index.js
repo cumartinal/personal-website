@@ -16,8 +16,8 @@ export default function IndexPage() {
           <div class="IntroTextBox">
             <h1>Hi, I'm Martín!</h1>
             <h2>
-              I'm a 4th Year MEng Computer Science (Human Computer Interaction)
-              student at The University of Manchester, UK
+              I'm a data scientist and an MEng Computer Science (Human Computer
+              Interaction) graduate
             </h2>
           </div>
           <div class="IndexNavBox">
